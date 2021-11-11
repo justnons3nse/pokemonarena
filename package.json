@@ -4,12 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build-css": "tailwindcss build -i src/style.css -o public/style.css"
+    "build-css": "tailwindcss build -i src/style.css -o style.css"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "tailwindcss": "^2.2.17"
+    "aos": "^2.3.4",
+    "tailwindcss": "^2.2.17",
+    "vue": "^3.2.21"
   }
 }

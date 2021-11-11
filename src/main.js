@@ -1,3 +1,6 @@
+
+AOS.init();
+
 function getRandomValue(min, max) {
   return Math.floor(Math.random() * (max - min)) + min;
 }
@@ -36,6 +39,7 @@ const app = Vue.createApp({
         return { width: this.playerHealth + "%" };
       }
     },
+    
 
     mayUseHeal() {
       return (
@@ -120,7 +124,7 @@ const app = Vue.createApp({
     },
 
     specialAttack() {
-        const attackValue = getRandomValue(2, 8);
+        const attackValue = getRandomValue(10, 20);
         if (this.gengarHealth - attackValue < 0) {
           this.gengarHealth = 0;
         } else {
@@ -133,7 +137,7 @@ const app = Vue.createApp({
 
     healPlayer() {
       this.currentRound++;
-      const healValue = getRandomValue(8, 20);
+      const healValue = getRandomValue(15, 20);
 
       if (this.playerHealth + healValue > 100) {
         this.playerHealth = 100;
