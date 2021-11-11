@@ -961,6 +961,10 @@ video {
     width: 50%;
   }
 
+  .sm\:items-start {
+    align-items: flex-start;
+  }
+
   .sm\:items-center {
     align-items: center;
   }
